@@ -64,7 +64,15 @@ num_one = -5
 num_one //= 2 # num_one = num_one // 5
 print(num_one)
 
+# Comparison Operators - Compare two values (==, !=, >, <, >=, <=)
+# == Equal
+# != Not Equal
+# > Greater Than
+# < Less Than
+# >= Greater Than or Equal
+# <= Less Than or Equal
 
-
-# Comparison Operators
-# Logical Operators
+# Logical Operators - Combine conditional statements (and, or, not)
+# and - Returns True if both statements are true
+# or - Returns True if one of the statements is true
+# not - Reverse
