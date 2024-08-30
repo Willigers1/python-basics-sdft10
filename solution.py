@@ -1,3 +1,4 @@
+import math
 #BDD
 # 1. Feature - calculate the number of ways to pair boys and girls 
 
@@ -40,3 +41,20 @@
 
 
 #solution
+def MatchingCouples(arr):
+    B, G, N = arr
+    half = N // 2
+
+    BCombination = math.comb(B, half)
+    GCombination = math.comb(G, half)
+
+    arrangements = math.factorial(half)
+
+    total_ways = BCombination * GCombination * arrangements
+
+    return total_ways
+
+
+
+print(MatchingCouples([5, 5, 4])) # 200
+print(MatchingCouples([2,2,2])) # 4
