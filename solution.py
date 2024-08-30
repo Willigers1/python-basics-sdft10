@@ -10,6 +10,33 @@
 # Then the function should return 200 because there are 10 waus to choose 2 boys from 5 , 
 # 10 ways to to choose 2 girls from 5 and 2 ways to pair the selected boys and girls  
 
-#pseudo code 
+# pseudo code 
+# Function MatchingCouples(arr)
+#   Input: arr, an array of 3 integers [B, G, N]
+#   Output: Integer representing the number of different ways to pair boys and girls
+
+# Step 1: Extract the values from the array
+# B = arr[0] no of boys 
+# G = arr[1] no of girls 
+# N = arr[2] no of people to pair together
+
+# Step 2: Calculate the number of bpys and girls to pair
+# Half = N / 2 
+
+# Step 3: Calculate the number of ways to choose HalfN boys from B boys
+# Boys = Cmn(B, HalfN)
+
+# Step 4: Calculate the number of ways to choose HalfN girls from G girls 
+# Girs = Cmn(G, HalfN)
+
+# Step 5: Calculate the number of ways to arrange the selected boys and girls
+# Result = Factorial(HalfN)
+
+# Step 6: Calculate the number of ways to pair the boys and girls together
+# Total ways  = Boys * Girs * Result
+
+# Step 7: Return the result as total number of ways 
+# Return Total ways
+
 
 #solution
