@@ -54,7 +54,5 @@ def MatchingCouples(arr):
 
     return total_ways
 
-
-
 print(MatchingCouples([5, 5, 4])) # 200
 print(MatchingCouples([2,2,2])) # 4
