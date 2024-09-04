@@ -8,8 +8,8 @@ import math
 # 
 # When I run the MatchinCouples function 
 # 
-# Then the function should return 200 because there are 10 waus to choose 2 boys from 5 , 
-# 10 ways to to choose 2 girls from 5 and 2 ways to pair the selected boys and girls  
+# Then the function should return 200 because there are 10 ways to choose 2 boys from 5 , 
+# 10 ways to choose 2 girls from 5 and 2 ways to pair the selected boys and girls  
 
 # pseudo code 
 # Function MatchingCouples(arr)
