@@ -27,7 +27,17 @@ class Mammal(Animal):
     pass 
 
 class Dog(Mammal):
-    pass
+
+    def bark(self):
+        print(f"{self.name} is barking"))
+
+class SnifferDog (Dog):
+    
+    def perform_daily_routine(self):
+        self.eat()
+        self.sleep()
+        self.walk()
+        self.bark()
 
 mammal_one = Mammal("James Kahwai", "Black")
 mammal_two = Mammal("Sylvia Wanjiku", "Brown") 
