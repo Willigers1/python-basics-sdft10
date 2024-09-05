@@ -30,22 +30,12 @@ class Library:
         for member in self.members:
             print(member.name)
 
-    # def remove_book(self, book):
-    #     if book in self.books:
-    #         print(f"books found {book.title}")
-    #         self.books.remove(book)
-    #     else:
-    #         print("Book not found")
-
-
-    # def remove_by_isbn(self, isbn):
-    #     for book in self.books:
-    #         if book.isbn ==isbn:
-    #             self.books.remove(book)
-    #             print("book removed")
-    #         else:
-    #             print('not found')
-
+    def remove_book(self, book):
+        if book in self.books:
+            print(f"books found {book.title}")
+            self.books.remove(book)
+        else:
+            print("Book not found")
 
 book_one = Book("Rich dad, poor dad", "Robert Kiyosaki", "12345rfdskjnv")
 print(book_one)
@@ -58,4 +48,4 @@ moringa_library.add_book(book_one)
 moringa_library.add_book(book_two)
 
 moringa_library.display_books() # Rich dad, poor dad
-moringa_library.remove_by_isbn("12345rfdskjnv") # Rich dad, poor dad
+moringa_library.remove_book(book_three) # Rich dad, poor dad
